@@ -1,0 +1,49 @@
+.main-crmbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.6rem;
+}
+
+.infos-crmbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(241, 243, 250);
+    margin-bottom: 2rem;
+}
+
+.infos-crmbar h3 {
+    color: #6C757D;
+}
+
+.links-infoscrmbar {
+    display: flex;
+    align-items: center;
+}
+
+.links-infoscrmbar a {
+    text-decoration: none;
+}
+
+.links-infocrmbar-noactive {
+    color: #727CF5;
+}
+
+.links-infocrmbar-active {
+    color: #ADB5BD;
+}
+
+.links-infoscrmbar svg {
+    width: 0.8rem;
+    margin: 0 0.7rem;
+    color: #ADB5BD;
+}
+
+.crm-items {
+    width: 100%;
+    display: flex;
+    gap: 1.8rem;
+    background-color: rgb(241, 243, 250);
+}

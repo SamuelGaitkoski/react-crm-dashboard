@@ -1,0 +1,78 @@
+.main-revenuecard {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem;
+    background-color: #FFF;
+    border-radius: 0.2rem;
+}
+
+.info-card-revenuecard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info-card-revenuecard h3 {
+    color: #6C757D;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.icon-info-card-revenue-card {
+    color: #6C757D;
+    width: 1.3rem;
+}
+
+.main-revenuecard img {
+    width: 37rem;
+}
+
+.infos-card-revenuecard {
+    width: 100%;
+    background-color: rgb(249, 249, 253);
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info-card-revenuecard-infos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-card-revenuecard-infos-card h4 {
+    color: #98A6AD;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.info-card-revenuecard-infos-card p {
+    color: #6D757D;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.graph-indicative {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.1rem;
+}
+
+.each-graph-indicative {
+    display: flex;
+    align-items: center;
+}
+
+.each-graph-indicative p {
+    color: #98A6AD;
+}

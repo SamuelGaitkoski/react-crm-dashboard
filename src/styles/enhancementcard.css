@@ -1,0 +1,48 @@
+.main-enhancement-card {
+    width: 100%;
+    padding: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.3rem;
+    background: rgb(133,141,246);
+    background: radial-gradient(circle, rgba(133,141,246,1) 0%, rgba(133,141,246,1) 37%, rgba(126,135,246,1) 37%, rgba(126,135,246,1) 73%, rgba(118,128,245,1) 73%, rgba(118,128,245,1) 100%);
+}
+
+.leftpart-enhancement-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.leftpart-enhancement-card svg {
+    color: #FFF;
+}
+
+.speaker-icon {
+    width: 1.85rem;
+    height: 1.85rem;
+}
+
+.arrow-right-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.leftpart-enhancement-card p {
+    color: #FFF;
+    margin: 1.5rem 0 0.7rem 0;
+    font-size: 1.4rem;
+}
+
+.rightpart-enhancement-card {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rightpart-enhancement-card img {
+    width: 8rem;
+}

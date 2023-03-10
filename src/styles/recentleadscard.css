@@ -1,0 +1,31 @@
+.main-recent-leads-card {
+    width: 50%;
+    padding: 1.6rem;
+    background-color: #FFF;
+    border-radius: 0.2rem;
+}
+
+.info-card-recent-leads-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.info-card-recent-leads-card h3 {
+    color: #6C757D;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.icon-info-card-recent-leads-card {
+    color: #6C757D;
+    width: 1.3rem;
+}
+
+.leads {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

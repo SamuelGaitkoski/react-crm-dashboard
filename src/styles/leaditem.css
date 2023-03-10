@@ -1,0 +1,36 @@
+.main-leaditem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftpart-lead-item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.leftpart-lead-item img {
+    border-radius: 50%;
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.leftpart-text-lead-item h5 {
+    color: #6C757D;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.leftpart-text-lead-item p {
+    color: #6C757D;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lead-status-item {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}

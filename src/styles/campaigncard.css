@@ -1,0 +1,69 @@
+.main-campaigncard {
+    width:40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.6rem;
+    background-color: #FFF;
+    border-radius: 0.2rem;
+}
+
+.info-card-campaigncard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info-card-campaigncard h3 {
+    color: #6C757D;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.icon-info-card {
+    color: #6C757D;
+    width: 1.3rem;
+}
+
+.main-campaigncard img {
+    width: 19rem;
+}
+
+.parameters {
+    display: flex;
+    gap: 4rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.parameter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parameter-card svg {
+    color: rgb(152, 166, 173);
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.parameter-card-number {
+    color: #6C757D;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.status-parameter-card {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.status-parameter-card p {
+    color: #98A6AD;
+    font-size: 1.1rem;
+    font-weight: 300;
+}

@@ -1,0 +1,29 @@
+.main-lateralbaritem {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-lateralbaritem svg {
+    color: #8391A2;
+}
+
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+
+.leftPart h3 {
+    margin-left: 0.8rem;
+    color: #8391A2;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.rightPart {
+    display: flex;
+    align-items: center;
+}
+
+

@@ -1,0 +1,74 @@
+.main-top-performing-card {
+    width: 48%;
+    padding: 1.6rem;
+    background-color: #FFF;
+    border-radius: 0.2rem;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.info-card-top-performing-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+
+.info-card-top-performing-card h3 {
+    color: #6C757D;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.icon-info-card-top-performing-card {
+    color: #6C757D;
+    width: 1.3rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table-top-performing-card {
+    width: 100%;
+    padding-right: 1.6rem;
+    border-collapse: collapse;
+}
+
+.table-top-performing-card th {
+    color: #6C757D;
+    font-size: 1rem;
+}
+
+.table-top-performing-card th, .table-top-performing-card td {
+    padding: 0.5rem;
+}
+
+.table-top-performing-card td h5, .table-top-performing-card p {
+    width: 9.1rem;
+}
+
+.table-top-performing-card td, .table-top-performing-card td h5 {
+    color: #6C757D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.table-top-performing-card td h5 {
+    margin: 0.7rem 0 0.55rem 0;
+}
+
+.table-top-performing-card td p {
+    color: #98A6AD;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.table-top-performing-card th {
+    font-weight: 600;
+    text-align: left;
+}
+
+.highlighted-line {
+    background-color: rgb(241, 243, 250);
+}

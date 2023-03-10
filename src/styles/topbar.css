@@ -1,0 +1,138 @@
+.main-topbar {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+    background-color: #FFF;
+}
+
+.leftside-content, .rightside-content {
+    display: flex;
+    align-items: center;
+}
+
+.rightside-content {
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.leftside-content svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #313A46;
+    margin-right: 1.5rem;
+}
+
+.input-topbar {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    background-color: rgb(241, 243, 250);
+    padding-left: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+.input-topbar svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.input-topbar input {
+    height: 100%;
+    background-color: rgb(241, 243, 250);
+    border: none;
+    font-size: 1rem;
+    color: rgb(180, 188, 195);
+}
+
+.input-topbar::placeholder {
+    color: rgb(180, 188, 195);
+    font-size: 1rem;
+}
+
+.input-topbar input:focus {
+    outline: none;
+}
+
+.button-topbar {
+    height: 100%;
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    background-color: #727CF5;
+    color: #FFF;
+    border: none;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.languages, .icons, .user {
+    display: flex;
+    align-items: center;
+}
+
+.languages {
+    cursor: pointer;
+}
+
+.languages img {
+    width: 1.5rem;
+}
+
+.languages p {
+    color: #98A6AD;
+    margin: 0 0.6rem;
+}
+
+.languages svg {
+    color: #98A6AD;
+}
+
+.icons {
+    gap: 2rem;
+}
+
+.icons svg {
+    width: 2rem;
+    height: 2rem;
+    color: #98A6AD;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 251, 253);
+    border-left: 0.1rem solid #dbe4e8;
+    border-right: 0.1rem solid #dbe4e8;
+    height: 100%;
+    padding: 1rem;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 0.7rem;
+}
+
+.user-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-infos h3, .user-infos p {
+    color: #98A6AD;
+}
+
+.user-infos h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user-infos p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
