@@ -1,0 +1,33 @@
+version: 2
+
+updates:
+  # Keep npm dependencies moving so they never rot into security advisories.
+  # Minor and patch bumps are grouped into a single PR to keep the noise down;
+  # majors arrive as individual PRs because they need a human look.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      production-dependencies:
+        dependency-type: production
+        update-types:
+          - minor
+          - patch
+      development-dependencies:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: ci
