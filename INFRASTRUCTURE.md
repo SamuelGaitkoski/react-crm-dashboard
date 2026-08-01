@@ -44,10 +44,11 @@ configuration, no environment needed.
 `.github/workflows/ci.yml` runs on every push to `main` and every pull request:
 
 1. `npm ci` on the Node version from `.nvmrc`, with npm cache
-2. `npm run build` — this type-checks (`tsc --noEmit`) before invoking Vite, so type
+2. `npm run lint` — ESLint 10 flat config (`eslint.config.js`), with
+   `typescript-eslint` and `eslint-plugin-react-hooks`
+3. `npm run build` — this type-checks (`tsc --noEmit`) before invoking Vite, so type
    errors fail CI
-3. `npx vitest run --passWithNoTests` — the flag is required because the repo has no
-   test files yet; Vitest exits non-zero on an empty suite without it
+4. `npx vitest run` — the suite in `src/App.test.tsx`
 
 CI **verifies only**. It does not publish, deploy or release anything.
 
@@ -84,8 +85,9 @@ setup above exists so that state does not decay again.
 
 ## Known gaps
 
-- **No linting** anywhere, local or CI. CRA provided ESLint implicitly and nothing
-  replaced it after the migration
-- **No test files**, so the CI test step is a no-op guarded by `--passWithNoTests`
-- **Dependabot PRs are not auto-merged.** Once CI has proven itself, enabling
-  auto-merge on the grouped patch PRs would remove the last routine notification
+- **Dependabot PRs are not auto-merged.** Once CI has proven itself over a few runs,
+  enabling auto-merge on the grouped patch PRs would remove the last routine
+  notification from this repo
+- **Test coverage is thin** — one file covering the single interactive behaviour.
+  Enough to make the CI step meaningful, not enough to catch a regression in the
+  static markup
