@@ -1,6 +1,6 @@
 import '../styles/enhancementcard.css';
 
-import { ArrowRight, SpeakerLow } from "phosphor-react";
+import { ArrowRight, SpeakerLow } from "@phosphor-icons/react";
 
 import emailCampaign from '../assets/email-campaign.svg';
 
