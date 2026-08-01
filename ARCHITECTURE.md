@@ -71,11 +71,8 @@ a backend to talk to.
 
 ## Known gaps
 
-- **No tests.** CI runs Vitest with `--passWithNoTests`; the harness is wired
-  (jsdom, `@testing-library/react`, `src/setupTests.ts`) but no test files exist
-- **No linter.** Create React App supplied ESLint implicitly; removing CRA removed it,
-  and nothing replaced it. There is currently no lint step locally or in CI
-- **`ToDoCard.handleItemDone` mutates in place.** `[...list]` is a shallow copy, so the
-  item objects are shared with the previous state and are edited directly. It renders
-  correctly only because `setList` receives a new array reference
-- **List keys use the array index** rather than `item.id`, which is available and stable
+- **Test coverage is a single file.** `src/App.test.tsx` mounts the whole app and
+  covers the one interactive behaviour that exists (toggling a todo). Everything else
+  is asserted only by "it rendered without throwing"
+- **No component-level tests**, because there is almost nothing to assert on until
+  cards take props instead of hardcoding their contents
