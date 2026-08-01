@@ -1,6 +1,6 @@
 import '../styles/topbar.css';
 
-import { Bell, CaretDown, Gear, List, MagnifyingGlass, SquaresFour } from 'phosphor-react';
+import { Bell, CaretDown, Gear, List, MagnifyingGlass, SquaresFour } from '@phosphor-icons/react';
 
 import usFlag from '../assets/us.jpg';
 import avatar1 from '../assets/avatar-1.jpg';
