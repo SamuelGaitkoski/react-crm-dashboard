@@ -1,6 +1,6 @@
 import '../styles/upgradecard.css';
 
-import { X } from 'phosphor-react';
+import { X } from '@phosphor-icons/react';
 
 import helpIcon from '../assets/help-icon.svg';
 
