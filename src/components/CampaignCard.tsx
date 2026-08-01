@@ -1,6 +1,6 @@
 import '../styles/campaigncard.css';
 
-import { Circle, DotsThreeOutlineVertical, EnvelopeSimple, EnvelopeSimpleOpen, Flag, PaperPlaneRight } from "@phosphor-icons/react"
+import { DotsThreeOutlineVertical, EnvelopeSimpleOpen, Flag, PaperPlaneRight } from "@phosphor-icons/react"
 
 import { CircleIcon } from './CircleIcon';
 
