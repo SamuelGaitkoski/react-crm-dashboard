@@ -2,6 +2,19 @@
 
 Project developed with React, TypeScript and Vite.
 
+A single-page presentational dashboard. It runs locally only — there is no backend and
+it is not deployed anywhere. See [`INFRASTRUCTURE.md`](INFRASTRUCTURE.md).
+
+## Documentation
+
+| Document | Covers |
+|---|---|
+| [`ARCHITECTURE.md`](ARCHITECTURE.md) | Project structure, styling and component conventions |
+| [`INFRASTRUCTURE.md`](INFRASTRUCTURE.md) | CI, Dependabot, and why there is no hosting |
+| [`CLAUDE.md`](CLAUDE.md) | Instructions for Claude Code |
+| [`AGENTS.md`](AGENTS.md) | Instructions for Codex |
+| [`REASONIX.md`](REASONIX.md) | Instructions for ReasonIX / DeepSeek |
+
 ## Available Scripts
 
 In the project directory, you can run:
