@@ -1,6 +1,6 @@
 import '../styles/crmitem.css';
 
-import { ArrowFatDown, ArrowFatUp } from 'phosphor-react';
+import { ArrowFatDown, ArrowFatUp } from '@phosphor-icons/react';
 
 type Props = {
     title: string;
