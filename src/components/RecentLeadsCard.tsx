@@ -1,6 +1,6 @@
 import '../styles/recentleadscard.css';
 
-import { DotsThreeOutlineVertical } from 'phosphor-react';
+import { DotsThreeOutlineVertical } from '@phosphor-icons/react';
 
 import { LeadItem } from './LeadItem';
 
