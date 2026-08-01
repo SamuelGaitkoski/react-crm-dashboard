@@ -1,6 +1,6 @@
 import '../styles/revenuecard.css';
 
-import { DotsThreeOutlineVertical } from 'phosphor-react';
+import { DotsThreeOutlineVertical } from '@phosphor-icons/react';
 
 import { CircleIcon } from './CircleIcon';
 
