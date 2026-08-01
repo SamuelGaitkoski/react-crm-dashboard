@@ -1,7 +1,7 @@
 import '../styles/todocard.css';
 
 import { useState } from 'react';
-import { DotsThreeOutlineVertical } from "phosphor-react";
+import { DotsThreeOutlineVertical } from "@phosphor-icons/react";
 
 import { ToDoItem } from './ToDoItem';
 
