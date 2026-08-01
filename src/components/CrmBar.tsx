@@ -1,6 +1,6 @@
 import '../styles/crmbar.css';
 
-import { CaretRight } from "phosphor-react";
+import { CaretRight } from "@phosphor-icons/react";
 
 import { CrmItem } from '../components/CrmItem';
 
