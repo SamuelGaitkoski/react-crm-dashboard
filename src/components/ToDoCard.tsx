@@ -17,15 +17,9 @@ export const ToDoCard = () => {
     ]);
 
     const handleItemDone = (id: number, done: boolean) => {
-        let newList = [...list];
-
-        for(let i in newList) {
-            if(newList[i].id === id) {
-                newList[i].done = done;
-            }
-        }
-
-        setList(newList);
+        setList(list.map(item => (
+            item.id === id ? { ...item, done } : item
+        )));
     }
 
     return (
@@ -35,9 +29,9 @@ export const ToDoCard = () => {
                 <DotsThreeOutlineVertical weight="fill" className='icon-info-card-to-do-card' />
             </div>
             <div className='items'>
-                {list.map((item, index) => (
-                    <ToDoItem 
-                        key={index}
+                {list.map((item) => (
+                    <ToDoItem
+                        key={item.id}
                         item={item} 
                         onUpdateCheck={handleItemDone}
                     />
