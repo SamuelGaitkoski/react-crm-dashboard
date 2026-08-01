@@ -18,15 +18,15 @@ Before making any git commit, run `review-dirty` so Codex reviews the uncommitte
 
 ## Verifying a change
 
-There is no meaningful test suite (see `ARCHITECTURE.md` — the app has no logic worth asserting on yet), so "it compiles" is most of the signal available. Before committing, run:
+Run what CI runs, in the same order:
 
 ```
-npm run typecheck                    # tsc --noEmit
-npm run build                        # typecheck + vite build
-npx vitest run --passWithNoTests     # what CI runs
+npm run lint        # eslint 10 flat config
+npm run build       # tsc --noEmit, then vite build
+npx vitest run      # src/App.test.tsx
 ```
 
-To verify something actually renders rather than merely compiles, write a temporary test that mounts `<App />` with `@testing-library/react` and assert on the DOM, then delete it. That is how the icon-library swap was validated.
+Test coverage is deliberately thin (one file, see `ARCHITECTURE.md`), so a green suite is weaker evidence here than in a normal project. To verify something actually renders rather than merely compiles, extend `src/App.test.tsx` or write a temporary test that mounts `<App />` and asserts on the DOM. That is how the icon-library swap was validated.
 
 ## Dependencies
 
