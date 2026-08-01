@@ -1,6 +1,6 @@
 import '../styles/topperformingcard.css';
 
-import { DotsThreeOutlineVertical, Eye } from 'phosphor-react';
+import { DotsThreeOutlineVertical, Eye } from '@phosphor-icons/react';
 
 export const TopPerformingCard = () => {
     return (
