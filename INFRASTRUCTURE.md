@@ -83,11 +83,27 @@ transitive dependencies that could not be patched because CRA was deprecated in
 February 2025. Migrating to Vite in August 2026 took it to zero. The CI and Dependabot
 setup above exists so that state does not decay again.
 
+## Merging Dependabot PRs — a deliberate choice
+
+**Dependabot PRs are merged by hand, and `main` is intentionally left unprotected.**
+This is a decision, not an oversight — do not "fix" it by adding auto-merge.
+
+Auto-merge only acts on a PR that cannot be merged yet, which means it needs a
+required status check, which means a ruleset on `main`. A ruleset requiring checks
+also **blocks direct pushes to `main`**, and direct one-file pushes are how this repo
+is actually worked on (see `CLAUDE.md`). Making both work needs an admin bypass entry
+in the ruleset plus write permissions for the Dependabot-triggered workflow token —
+a lot of machinery for a dormant portfolio project.
+
+Instead: Dependabot email notifications are disabled at the account level, grouped
+PRs accumulate quietly at roughly one a month, and they get merged when convenient
+with CI already showing green. Same outcome, none of the moving parts.
+
+If this repo ever becomes actively developed by more than one person, revisit —
+that is the point at which protecting `main` earns its cost.
+
 ## Known gaps
 
-- **Dependabot PRs are not auto-merged.** Once CI has proven itself over a few runs,
-  enabling auto-merge on the grouped patch PRs would remove the last routine
-  notification from this repo
 - **Test coverage is thin** — one file covering the single interactive behaviour.
   Enough to make the CI step meaningful, not enough to catch a regression in the
   static markup
