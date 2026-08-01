@@ -13,13 +13,15 @@
 
 ## Verifying a change
 
+Run what CI runs, in the same order:
+
 ```
-npm run typecheck                    # tsc --noEmit
-npm run build                        # typecheck + vite build
-npx vitest run --passWithNoTests     # what CI runs
+npm run lint        # eslint 10 flat config
+npm run build       # tsc --noEmit, then vite build
+npx vitest run      # src/App.test.tsx
 ```
 
-There is no meaningful test suite, so a passing build is most of the available signal. To prove something renders rather than merely compiles, mount `<App />` in a temporary `@testing-library/react` test and assert on the DOM, then delete it.
+Test coverage is deliberately thin — one file covering the single interactive behaviour — so a green suite is weaker evidence here than in a normal project. To prove something renders rather than merely compiles, extend `src/App.test.tsx` or mount `<App />` in a temporary `@testing-library/react` test and assert on the DOM.
 
 ## Stack
 
