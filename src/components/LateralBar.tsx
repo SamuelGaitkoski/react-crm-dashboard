@@ -1,6 +1,6 @@
 import '../styles/lateralbar.css';
 
-import { HouseLine, CalendarBlank, Chats, Storefront, Envelope, Bag, File, Globe, Browser, WifiHigh, FolderPlus, Notebook, Cube, FolderSimplePlus, MapPin, GridFour, ChartBar, Table, Stack, BookBookmark, Cardholder } from 'phosphor-react';
+import { HouseLine, CalendarBlank, Chats, Storefront, Envelope, Bag, File, Globe, Browser, WifiHigh, FolderPlus, Notebook, Cube, FolderSimplePlus, MapPin, GridFour, ChartBar, Table, Stack, BookBookmark, Cardholder } from '@phosphor-icons/react';
 
 import { LateralBarItem } from './LateralBarItem';
 import { UpgradeCard } from './UpgradeCard';
