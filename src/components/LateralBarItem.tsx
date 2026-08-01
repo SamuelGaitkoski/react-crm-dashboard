@@ -1,4 +1,4 @@
-import { CaretRight } from 'phosphor-react';
+import { CaretRight } from '@phosphor-icons/react';
 import '../styles/lateralbaritem.css';
 
 type Props = {
