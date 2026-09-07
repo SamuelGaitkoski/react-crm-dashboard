@@ -9,7 +9,7 @@
 - **One commit per file** — never group multiple files in a single commit
 - **Commit messages are the subject line plus the `Co-Authored-By` trailer, nothing else** — no body paragraphs
 - **Always push to remote** (`git push`) after committing changes
-- Add `Co-Authored-By: ReasonIX <noreply@reasonix.ai>` trailer to every commit
+- Add `Co-Authored-By: DeepSeek V4 Pro <noreply@deepseek.com>` trailer to every commit
 
 ## Verifying a change
 
