@@ -36,5 +36,6 @@ Test coverage is deliberately thin — one file covering the single interactive 
 - Never reintroduce `react-scripts` / Create React App — it was removed because it is deprecated and was the source of every security advisory this repo used to generate
 - React stays on 18 deliberately; do not upgrade to 19 as part of unrelated work
 - Keep `npm audit` at zero
+- Routine version bumps arrive as grouped Dependabot PRs (`.github/dependabot.yml`). Prefer merging those over hand-editing versions
 
 See [`ARCHITECTURE.md`](ARCHITECTURE.md) for structure and [`INFRASTRUCTURE.md`](INFRASTRUCTURE.md) for automation.
